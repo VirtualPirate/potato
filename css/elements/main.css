@@ -1,0 +1,16 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+  main {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  main {
+    gap: 5vw;
+  }
+}

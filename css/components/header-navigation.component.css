@@ -1,0 +1,30 @@
+.header-navigation {
+  display: none;
+  position: relative;
+}
+
+.header-navigation-bar {
+  position: absolute;
+  top: 15%;
+  width: 5vw;
+  left: 5%;
+
+  fill: white;
+}
+
+.header-navigation-bar-mobile {
+  /* display: none; */
+  width: 100vw;
+  height: 5vw;
+  background-color: #93caf9;
+}
+
+@media (max-width: 1000px) {
+}
+
+@media (max-width: 600px) {
+  .header-navigation {
+    display: block;
+    height: 22vw;
+  }
+}
