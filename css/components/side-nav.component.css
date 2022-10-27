@@ -2,7 +2,7 @@
   position: absolute;
   width: clamp(100px, 70vw, 400px);
   height: max(100vh, 100%);
-  background-color: #fafafa;
+  background-color: #fff;
   /* background-color: #ECEFF1; */
   /* color: white; */
   transform: translateX(-400px);
@@ -10,16 +10,27 @@
   z-index: 1000;
 
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-  top: 0%;
+  top: 0;
 
   display: none;
+
+  /* background-image: url(/graphics/side-nav-bg.svg);
+  background-size: cover; */
+  /* background-attachment: fixed; */
+
   /* bottom: ; */
 }
 
 .side-nav-sticky {
   position: sticky;
+  height: 100vh;
 
+  /* background-size: clamp(100px, 70vw, 400px) 667px; */
   top: 0%;
+
+  /* background-image: url(/graphics/side-nav-bg.svg);
+  background-size: 100% 100%;
+  background-attachment: fixed; */
 }
 
 .close-side-nav-btn {
@@ -32,6 +43,16 @@
 
 .side-nav.show {
   transform: translateX(0px);
+}
+
+.side-nav-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  width: clamp(100px, 70vw, 400px);
+  height: 100vh;
+  object-fit: cover;
 }
 
 .side-nav-items {
